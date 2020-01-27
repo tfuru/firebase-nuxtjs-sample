@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-app",
+  "version": "1.0.0",
+  "description": "My magnificent Nuxt.js project",
+  "author": "nobuyuki furukawa",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "build-nuxt": "nuxt-ts build && cp -R .nuxt/ ../functions/.nuxt && rm -rf ../public/* && cp -R .nuxt/dist/client/ ../public/assets",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.3.8",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/bulma": "^1.2.1",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.6",
+    "nodemon": "^1.18.9"
+  }
+}
